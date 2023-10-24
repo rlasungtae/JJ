@@ -1,5 +1,6 @@
 body {
     font-family: 'RozhaOne';
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -75,7 +76,7 @@ body {
     height: 50px;
     border: 1px solid white;
     color: white;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
     font-family: '기본폰트';
 }
 
@@ -91,3 +92,141 @@ body {
 .footer p {
     font-size: 12px;
 }
+
+.testPagebg{
+    background-color: black;
+    height: calc(100vh - 72px);
+    text-align: center;
+}
+
+.testPagebg progress {
+    margin-top: 20px;
+}
+
+progress {
+    -webkit-appearance: none;  
+    appearance: none; 
+    width: 40vw;
+    position: absolute;
+    bottom: 10px;
+    right: 15vw;
+    
+}
+
+progress::-webkit-progress-bar {
+    height: 10px;   
+    background-color: white;
+    border: 0px solid white;  
+    border-radius: 10px;
+    
+}
+
+progress::-webkit-progress-value {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.content-box {
+    background-color: rgb(23, 23, 23);
+    width: 70vw;
+    height: 35vw;
+    display: inline-block;
+    margin-top: 70px;
+    position: relative;
+}
+
+.start-button {
+    margin-top: 200px;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 50px;
+    border: 3px solid blue;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    font-size: 36px;
+    top: 13vw;
+}
+
+.option-container {
+    display: flex;   
+    height: 80%;
+}
+
+.varBox {
+    height: 100%;
+}
+
+.content-box h4 {
+    color: white;
+    font-size: 40px;    
+    margin-bottom: 0;
+}
+
+.content-box p {
+    color: white;
+    font-size: 12px;    
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+
+.option-box {
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 18px;
+}
+
+.box1 {
+    width: 10vw;
+    height: 14vw;
+}
+
+.box2 {
+    width: 30vw;
+    height: 22vw;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.box2 img {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+}
+
+.box2 span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-shadow: 1px 1px 4px black;    
+}
+
+svg{
+    width: 80vw;
+    color: white;
+}
+
+
+.result-container {
+    width: 20vw;
+    height: 25vw;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 18px;
+}
+
+path {
+    fill: white;
+    stroke: blue;
+    stroke-width: 10px;
+}
+
+
