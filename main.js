@@ -13,10 +13,6 @@ var userValue = {
 var topMatches = [];
 
 
-// document.querySelector('.content-box').querySelector('.option-box').hover(function(e){
-// 	document.querySelector('.option-box').classList.add('neonText');
-// })
-
 
 
 // 시작하기
@@ -376,17 +372,11 @@ document.querySelector('#load-result').addEventListener('click', function(){
 
 
 	// 결과 출력
-const resultContainer = document.querySelector('.result-container').querySelector('.result-title').innerHTML;
 	
 // matchingCounts 배열에서 상위 3개의 국가를 가져옴
-
 var topMatches = matchingCounts.slice(0, 3);
 console.log(topMatches);
-// // 결과를 HTML에 추가
-// topMatches.forEach((match, index) => {
-//   const resultTitle = resultContainer[index].querySelector('.result-title').innerHTML;
-//   resultTitle.textContent = match.country;
-// });
+
 document.querySelectorAll('.result-title')[0].innerHTML = topMatches[0].country;
 document.querySelectorAll('.result-title')[1].innerHTML = topMatches[1].country;
 document.querySelectorAll('.result-title')[2].innerHTML = topMatches[2].country;

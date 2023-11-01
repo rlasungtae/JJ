@@ -1,3 +1,15 @@
+<!-- 
+    특징 수가 같으면 랜덤으로 출력되게 해보기
+
+    대륙 선택 시 누른 모든 버튼에 focus 이펙트 적용해보기
+
+    대륙 -> 같은 대륙 짝수번 누르면 배열에서 제거하기
+         
+
+ -->
+
+
+
 <!-- 1. 
 option-box클래스로 하면 왜 뒤에 period의 option-box클래스까지 선택이 될까?
 for(var i=0; i<5; i++){
@@ -57,41 +69,6 @@ for(var i=0; i<5; i++){
 
 ------------------------------------------------------------------ -->
 
-
-
-
-<!-- <script>
-                
-
-    for(var i=0; i<5; i++){
-        document.querySelectorAll('.box1')[i].addEventListener('click', function(e){
-            document.querySelector('#budget').classList.remove('show');
-            document.querySelector('#period').classList.add('show');
-
-
-            // for(var j=1; j<6; j++){
-            //     if(e.target.value == 'budget'+j){
-            //         userValue.budgetV = 'budget'+j;
-            //     }
-            // }
-
-            // console.log(userValue.budgetV);
-            // console.log(e.target.value);
-            
-            // userValue.budgetV = document.querySelector('.box1').value;
-            
-        })
-        userValue.budgetV = document.getElementById('budget').getElementsByClassName('box1')[0].value;
-        console.log(userValue.budgetV);
-    }
-
-</script>
-
-
-이중 for문을 사용하지 않고 클릭한 버튼의 i값을 바로 userValue.budgetV에 선언. 왜 안되지?
-
-
----------------------------------------------------------------------------- -->
 
 <!-- 대륙 선택 기능 
 

@@ -39,9 +39,6 @@ body {
     padding-left: 10px;
 }
 
-.nav-center {
-    margin-left: 60px;
-}
 
 .nav-right ul {
     display: inline-block;
@@ -336,7 +333,7 @@ path {
     color: red;
 }
 
-button:hover{
+button:hover {
     animation: pulsate 1.5s infinite alternate;  
     border: 0.2rem solid #fff;
     padding: 0.4em;
@@ -347,6 +344,31 @@ button:hover{
                 0 0 2.8rem blue,
                 inset 0 0 1.3rem blue;
 }
+
+button:focus {
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem blue,
+                0 0 0.8rem blue,
+                0 0 2.8rem blue,
+                inset 0 0 1.3rem blue;
+}
+
+button:visited{
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem blue,
+                0 0 0.8rem blue,
+                0 0 2.8rem blue,
+                inset 0 0 1.3rem blue;
+}
+
 
 
 
