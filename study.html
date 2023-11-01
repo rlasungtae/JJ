@@ -1,0 +1,137 @@
+<!-- 1. 
+option-box클래스로 하면 왜 뒤에 period의 option-box클래스까지 선택이 될까?
+for(var i=0; i<5; i++){
+    document.querySelectorAll('.option-box')[i].addEventListener('click', function(){
+        document.querySelector('#budget').classList.add('hide');
+        document.querySelector('#period').classList.add('show');
+    })
+}
+
+<div id="budget" class="varBox">
+    <h4>예산</h4>
+    <div class="option-container">
+        <button  id="budget-btn" class="option-box box1">50만원 이하</button>
+        <button  id="budget-btn" class="option-box box1">50 ~ 100만원</button>
+        <button  id="budget-btn" class="option-box box1">100 ~ 200만원</button>
+        <button  id="budget-btn" class="option-box box1">200 ~ 300만원</button>
+        <button  id="budget-btn" class="option-box box1">300만원 이상</button>
+    </div>
+    <progress class="progress-bar" value="10" max="100"></progress>
+</div>
+
+<script>
+
+    for(var i=0; i<5; i++){
+        document.querySelectorAll('#budget-btn')[i].addEventListener('click', function(){
+            document.querySelector('#budget').classList.add('hide');
+            document.querySelector('#period').classList.add('show');
+            console.log('맞음')
+        })
+    }
+
+</script>
+
+
+
+<div id="period" class="varBox">
+    <h4>기간</h4>
+    <div class="option-container">
+        <button id="test123" class="option-box box1">1주일 이하</button>
+        <button id="test123" class="option-box box1">1주일 ~ 2주일</button>
+        <button id="test123" class="option-box box1">2주일 이상</button>
+    </div>
+    <progress class="progress-bar" value="10" max="100"></progress>
+</div>
+
+<script>
+
+    for(var i=0; i<3; i++){
+        document.querySelectorAll('#test123')[i].addEventListener('click', function(){
+            document.querySelector('#period').classList.add('hide');
+            document.querySelector('#preferStyle').classList.add('show');
+        })
+    }
+
+</script>
+
+
+------------------------------------------------------------------ -->
+
+
+
+
+<!-- <script>
+                
+
+    for(var i=0; i<5; i++){
+        document.querySelectorAll('.box1')[i].addEventListener('click', function(e){
+            document.querySelector('#budget').classList.remove('show');
+            document.querySelector('#period').classList.add('show');
+
+
+            // for(var j=1; j<6; j++){
+            //     if(e.target.value == 'budget'+j){
+            //         userValue.budgetV = 'budget'+j;
+            //     }
+            // }
+
+            // console.log(userValue.budgetV);
+            // console.log(e.target.value);
+            
+            // userValue.budgetV = document.querySelector('.box1').value;
+            
+        })
+        userValue.budgetV = document.getElementById('budget').getElementsByClassName('box1')[0].value;
+        console.log(userValue.budgetV);
+    }
+
+</script>
+
+
+이중 for문을 사용하지 않고 클릭한 버튼의 i값을 바로 userValue.budgetV에 선언. 왜 안되지?
+
+
+---------------------------------------------------------------------------- -->
+
+<!-- 대륙 선택 기능 
+
+            <div id="continent" class="varBox test">
+                <h4>대륙</h4>
+                <div class="option-container">
+                    <div class="continents">
+                        <div class="cont SAmerica"></div>
+                        <div class="cont NAmerica">북미</div>
+                        <div class="cont Asia">아시아</div>
+                        <div class="cont Africa">아프리카</div>
+                        <div class="cont Antarctica">남극</div>
+                        <div class="cont Europe">유럽</div>
+                        <div class="cont Oceania">오세아니아</div>
+                    </div>
+                </div>
+                <button class="option-box">다음</button>
+                <progress class="progress-bar" value="30" max="100"></progress>
+                <p>※ 중복 선택 가능</p>
+            </div>
+
+
+            <script src="/continents.js"></script>
+
+            <script>
+                document.querySelector('.SAmerica').innerHTML = 남미;
+                document.querySelector('.NAmerica').innerHTML = 북미;
+                document.querySelector('.Asia').innerHTML = 아시아;
+                document.querySelector('.Africa').innerHTML = 아프리카;
+                document.querySelector('.Antarctica').innerHTML = 남극;
+                document.querySelector('.Europe').innerHTML = 유럽;
+                document.querySelector('.Oceania').innerHTML = 오세아니아;
+
+                document.querySelectorAll('.SAmerica')[1].addEventListener('click', function(){
+                    console.log('누름');
+                })
+            </script>
+
+
+
+-------------------------------------------------------------------------------- -->
+
+

@@ -97,6 +97,7 @@ body {
     background-color: black;
     height: calc(100vh - 72px);
     text-align: center;
+    overflow: hidden;
 }
 
 .testPagebg progress {
@@ -123,6 +124,7 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
     background-color: blue;
+    /* display: block; */
     border-radius: 10px;
 }
 
@@ -147,6 +149,14 @@ progress::-webkit-progress-value {
     top: 13vw;
 }
 
+.end-button {
+    display: none;
+    margin: auto;
+    margin-top: 200px;
+}
+
+
+
 .option-container {
     display: flex;   
     height: 80%;
@@ -154,6 +164,7 @@ progress::-webkit-progress-value {
 
 .varBox {
     height: 100%;
+    display: none;
 }
 
 .content-box h4 {
@@ -168,6 +179,13 @@ progress::-webkit-progress-value {
     position: absolute;
     bottom: 0;
     right: 10px;
+}
+
+.next-btn {
+    font-size: 12px;    
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
 }
 
 
@@ -193,11 +211,6 @@ progress::-webkit-progress-value {
     padding: 0;
 }
 
-.box2 img {
-    box-sizing: content-box;
-    width: 100%;
-    height: 100%;
-}
 
 .box2 span {
     position: absolute;
@@ -206,9 +219,44 @@ progress::-webkit-progress-value {
     text-shadow: 1px 1px 4px black;    
 }
 
+.box2 img {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+}
+
+.survival-box {
+    height: 22vw;
+    margin: auto;
+    width: 3vw;
+    background-color: black;
+    color: red;
+    border-radius: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+
 svg{
     width: 80vw;
     color: white;
+}
+
+
+path {
+    fill: white;
+    stroke: blue;
+    stroke-width: 10px;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
 
 
@@ -221,12 +269,111 @@ svg{
     border-radius: 10px;
     border: 1px solid rgb(168, 168, 168);
     font-size: 18px;
+    overflow: hidden;
 }
 
-path {
-    fill: white;
-    stroke: blue;
-    stroke-width: 10px;
+.result-img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.varBox .result-title{
+    margin-top: 0;
+    font-size: 2vw;
+}
+
+.test {
+    display: block;
 }
 
 
+.continents svg {
+    height: 700px;
+}
+
+.SAmerica {
+    position: absolute;
+    right: -56px;
+    top: 180px;
+}
+
+.NAmerica {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.Asia {
+    position: absolute;
+    left: 86px;
+    top: 36px;
+}
+.Africa {
+    position: absolute;
+    left: 75px;
+    top: 90px;
+}
+
+.Antarctica {
+    position: absolute;
+    top: 350px;
+    left: 40px;
+}
+.Europe {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.Oceania {
+    position: absolute;
+    left: 230px;    
+    top: 170px;
+}
+
+.cont {
+    font-size: 30px;
+    z-index: 5;
+    color: red;
+}
+
+button:hover{
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem blue,
+                0 0 0.8rem blue,
+                0 0 2.8rem blue,
+                inset 0 0 1.3rem blue;
+}
+
+
+
+@keyframes pulsate {
+    
+    100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px blue,
+        0 0 80px blue,
+        0 0 90px blue,
+        0 0 100px blue,
+        0 0 150px blue;
+    }
+
+    0% {
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px blue,
+      0 0 45px blue,
+      0 0 55px blue,
+      0 0 70px blue,
+      0 0 80px blue;
+  
+  }
+}
